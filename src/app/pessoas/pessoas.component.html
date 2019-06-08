@@ -1,0 +1,22 @@
+<div class="">
+  <table class="table bg-white">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Email</th>
+        <th scope="col">Data de Cadastro</th>
+        <th scope="col">Produto</th>
+      </tr>
+    </thead>
+    <tbody class="bg-white">
+      <tr *ngFor="let pessoa of pessoas; let i = index">
+        <th scope="row">{{i + 1}}</th>
+        <td>{{pessoa?.Nome}} {{pessoa?.Sobrenome}}</td>
+        <td>{{pessoa?.Email}}</td>
+        <td>{{pessoa?.Cadastro | date: 'dd/MM/yyyy hh:mm:ss'}}</td>
+        <td>{{pessoa?.Produto?.Nome}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

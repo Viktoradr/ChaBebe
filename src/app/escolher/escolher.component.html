@@ -1,0 +1,56 @@
+<div class="modal-header">
+  <h5 class="modal-title text-center w-100">Conto com a sua presença!</h5>
+</div>
+<div class="modal-body p-0">
+
+  <div class="p-3">
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">
+          <i class="material-icons">face</i>
+        </span>
+      </div>
+      <input type="text" class="form-control" placeholder="Nome" aria-label="Nome" aria-describedby="basic-addon1" [(ngModel)]="pessoa.Nome" required>
+    </div>
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">
+          <i class="material-icons">pets</i>
+        </span>
+      </div>
+      <input type="text" class="form-control" placeholder="Sobrenome" aria-label="Sobrenome"
+        aria-describedby="basic-addon1" [(ngModel)]="pessoa.Sobrenome" required>
+    </div>
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">
+          <i class="material-icons" >alternate_email</i>
+        </span>
+      </div>
+      <input type="email" class="form-control" placeholder="E-mail" aria-label="Email" aria-describedby="basic-addon1" 
+      [(ngModel)]="pessoa.Email" required>
+    </div>
+  </div>
+
+  <div class="text-center">
+    <h4 class="prodEscolhido">Produto Escolhido</h4>
+    <span>{{Produto.Nome}}</span>
+  </div>
+
+</div>
+<div class="modal-footer mt-5">
+
+  <div class="btn-group w-100" role="group" aria-label="Basic example">
+    <button type="button" class="btn btn-danger d-flex justify-content-center" (click)="close()">
+      <i class="material-icons">sentiment_dissatisfied</i>
+      <span class="pl-2">Fechar</span>
+    </button>
+
+    <button type="button" class="btn btn-primary d-flex justify-content-center" (click)="escolher()">
+      <i class="material-icons">sentiment_satisfied_alt</i>
+      <span class="pl-2">Escolher</span>
+    </button>
+  </div>
+</div>

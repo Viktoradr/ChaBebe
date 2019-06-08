@@ -1,0 +1,67 @@
+<div id="page-wrapper">
+
+    <section id="header" style="padding-bottom: 0;">
+      <h1><a href="index.html">Chá de Bebê</a></h1>
+  
+      <section id="banner">
+        <header>
+  
+          <div class="d-flex justify-content-center">
+            <i class="material-icons bebe">child_friendly</i>
+            <h2 class="mt-2">Nathan</h2>
+          </div>
+          <p>Venha comemorar conosco</p>
+        </header>
+      </section>
+  
+    </section>
+  
+    <section id="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+  
+            <section>
+              <header class="major">
+                <h2>Minha Lista</h2>
+              </header>
+  
+              <div class="row">
+                <div class="col-8 col-12-medium">
+                  <section>
+                    <ul class="dates">
+                      <li *ngFor="let produto of produtos; let i = index">
+                        <span class="date pointer"><strong>{{i + 1}}</strong></span>
+                        <!-- <span class="date pointer"><strong>Escolher</strong></span> -->
+                        <h3 class="produtoName">{{produto.Nome}}</h3>
+                        <button type="button" class="btnEscolher" (click)="openModal(produto)">Escolher</button>
+                      </li>
+                    </ul>
+                  </section>
+                </div>
+              </div>
+            </section>
+  
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section id="footer" style="padding: 0">
+      <div class="container">
+        <div class="row">
+  
+          <div class="col-12">
+            <div id="copyright">
+              <ul class="links">
+                <li>&copy; BuildForAll. All rights reserved.</li>
+                <li>Design: <a href="http://buildforall.com.br">Victor Alves</a></li>
+              </ul>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </section>
+  
+  </div>
